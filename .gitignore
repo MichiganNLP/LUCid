@@ -1,0 +1,41 @@
+venv
+.env
+run_aligner.sh
+.venv
+.codex
+slurm*
+vllm*
+data
+
+
+# --- Retrieval logs ---
+src/retrieval/retrieval_logs/
+src/generation/generation_logs/
+src/reranker/reranker_logs
+src/rmm/logs
+src/evaluation/evaluation_logs
+
+LUCid Redefining Relevance For Lifelong Personalization.pdf
+
+# --- All Logs
+# *logs*
+# *.log
+
+# --- Data files / logs ---
+data/__pycache__/
+data/session_prep/longmemeval_m_cleaned.json
+data/*retrievallog*
+data/latenteval.json
+data/longmemeval_s.json
+data/longmemeval_s.json_retrievallog_session_flat-contriever
+data/latenteval.json_retrievallog_session_flat-contriever
+
+longmemeval_oracle.json
+longmemeval_topic_df.csv
+personamem_topic_df_v2.csv
+prefeval_gold_turns.csv
+prefeval_topic_df_gold_turn.csv
+
+src/evaluation/evaluation_logs/aggregated_match_scores.json
+
+src/rmm/rmm_old
