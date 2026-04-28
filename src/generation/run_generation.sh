@@ -17,8 +17,8 @@ source .venv/bin/activate
 # the next to run is gold for chatgpt
 
 # no-retrieval
-in_file="data/latent_bench_full_50.json"
-# in_file="src/retrieval/retrieval_logs/flat-contriever/session/latent_bench_full_50.json_retrievallog_session_flat-contriever_1953"
+in_file="data/lucid_s.json"
+# in_file="src/retrieval/retrieval_logs/flat-contriever/session/lucid_s.json_retrievallog_session_flat-contriever_1953"
 out_dir="src/generation/generation_logs/"
 retriever="no-retrieval"
 granularity="session"

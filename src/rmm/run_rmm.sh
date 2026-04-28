@@ -17,9 +17,9 @@ NUM_SHARDS=8
 SHARD_ID=${SLURM_ARRAY_TASK_ID}
 
 python -m src.rmm.run_rmm_retrieval \
-  --in_file data/latent_bench_full_200.json \
+  --in_file data/lucid_b.json \
   --out_dir src/rmm/logs/shards \
-  --outfile_prefix latent_bench_full_200 \
+  --outfile_prefix lucid_b \
   --model Qwen/Qwen3.5-27B-FP8 \
   --base_url http://gl1500.arc-ts.umich.edu:8002/v1 \
   --retriever flat-contriever \

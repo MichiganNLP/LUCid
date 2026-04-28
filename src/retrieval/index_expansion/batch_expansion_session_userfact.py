@@ -89,7 +89,7 @@ if __name__ == "__main__":
     assert mode in ["zero-shot", "ICL"]
 
     # current_dir = os.getcwd()
-    in_file = "data/latent_bench_full_200.json"
+    in_file = "data/lucid_b.json"
     # out_dir = os.path.join(current_dir, "index_expansion_logs")
     current_dir = Path(__file__).resolve().parent
     out_dir = current_dir / "index_expansion_logs"

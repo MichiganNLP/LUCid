@@ -17,9 +17,9 @@ source .venv/bin/activate
 
 # ['flat-bm25', 'flat-contriever', 'flat-stella', 'flat-gte', 'oracle']:
 
-# src/retrieval/index_expansion/index_expansion_logs/latent_bench_full_200.json.session-userfact.ICL.json
+# src/retrieval/index_expansion/index_expansion_logs/lucid_b.json.session-userfact.ICL.json
 
-in_file="data/latent_bench_full_50.json"
+in_file="data/lucid_s.json"
 retriever="flat-contriever"
 granularity="turn"
 index_expansion_result_join_mode="none"

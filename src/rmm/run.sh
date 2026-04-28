@@ -14,14 +14,14 @@ source .venv/bin/activate
 # mkdir -p src/rmm/logs
 
 # python -m src.rmm.precompute_extractions \
-#   --in_file data/latent_bench_full_200.json \
+#   --in_file data/lucid_b.json \
 #   --out_file src/rmm/logs/precomputed_extractions.json \
 #   --model Qwen/Qwen3.5-27B-FP8 \
 #   --base_url http://gl1500.arc-ts.umich.edu:8002/v1 \
 #   # --limit 2
 
 # python -m src.rmm.run_rmm_retrieval \
-#   --in_file data/latent_bench_full_200.json \
+#   --in_file data/lucid_b.json \
 #   --out_dir src/rmm/logs \
 #   --model Qwen/Qwen3.5-27B-FP8 \
 #   --base_url http://gl1500.arc-ts.umich.edu:8002/v1 \
@@ -34,9 +34,9 @@ source .venv/bin/activate
 # SHARD_ID=${SLURM_ARRAY_TASK_ID}
 
 # python -m src.rmm.run_rmm_retrieval \
-#   --in_file data/latent_bench_full_50.json \
+#   --in_file data/lucid_s.json \
 #   --out_dir src/rmm/logs/shards \
-#   --outfile_prefix latent_bench_full_50 \
+#   --outfile_prefix lucid_s \
 #   --model Qwen/Qwen3.5-27B-FP8 \
 #   --base_url http://gl1500.arc-ts.umich.edu:8002/v1 \
 #   --retriever flat-contriever \

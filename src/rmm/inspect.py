@@ -1,7 +1,7 @@
 import json
 from pprint import pprint
 
-out_file = "src/rmm/logs/latent_bench_full_10.json_rmm_retrievallog_flat-contriever_1"
+out_file = "src/rmm/logs/lucid_c.json_rmm_retrievallog_flat-contriever_1"
 
 with open(out_file, "r") as f:
     first = json.loads(next(f))

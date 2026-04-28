@@ -14,7 +14,7 @@ source .venv/bin/activate
 # BAAI/bge-reranker-v2-m3 BAAI/bge-reranker-v2-gemma Qwen/Qwen3-Reranker-0.6B, Qwen/Qwen3-Reranker-8B
 # gemini-3-flash-preview, Qwen/Qwen3.5-27B-FP8, claude-3-haiku-20240307, gpt-5.4-mini
 
-in_file="data/latent_bench_full_30.json"
+in_file="data/lucid_c.json"
 out_dir="src/reranker/reranker_logs"
 retriever="oracle-session"
 granularity="session"

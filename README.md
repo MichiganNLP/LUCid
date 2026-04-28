@@ -97,27 +97,40 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Data
+### 📦 Data
 
-Place the LUCid benchmark files in `data/`. This repository expects the following filenames:
+The **LUCid benchmark** is available on [![Hugging Face](https://img.shields.io/badge/🤗%20Dataset-LUCid-yellow)](https://huggingface.co/datasets/MichiganNLP/LUCid).  
+Download the dataset files into a local `data/` directory.
 
-```text
-data/latent_bench_full_30.json
-data/latent_bench_full_50.json
-data/latent_bench_full_200.json
-data/latent_bench_full_500.json
-data/latent_bench_full_oracle.json
-```
+```bash
+mkdir -p data/
+cd data/
+
+# Core benchmark variants
+wget https://huggingface.co/datasets/MichiganNLP/LUCid/resolve/main/lucid_c.json
+wget https://huggingface.co/datasets/MichiganNLP/LUCid/resolve/main/lucid_s.json
+wget https://huggingface.co/datasets/MichiganNLP/LUCid/resolve/main/lucid_b.json
+wget https://huggingface.co/datasets/MichiganNLP/LUCid/resolve/main/lucid_l.json
+
+# Oracle / analysis split
+wget https://huggingface.co/datasets/MichiganNLP/LUCid/resolve/main/lucid_oracle.json
+
+# Optional subsets
+wget https://huggingface.co/datasets/MichiganNLP/LUCid/resolve/main/lucid.json
+wget https://huggingface.co/datasets/MichiganNLP/LUCid/resolve/main/lucid_5.json
+wget https://huggingface.co/datasets/MichiganNLP/LUCid/resolve/main/lucid_10.json
+
+cd ..
 
 ## 📜 Dataset Format
 
 LUCid includes multiple benchmark variants corresponding to different history sizes and evaluation settings:
 
-* `latent_bench_full_30.json`: Controlled setting (~30 sessions, ~47K tokens). Designed for reranking analysis where the relevant session is included in a small candidate set.  
-* `latent_bench_full_50.json`: Small-scale benchmark (~50 sessions, ~64K tokens). Suitable for fast experimentation and long-context evaluation.  
-* `latent_bench_full_200.json`: Base benchmark (~200 sessions, ~270K tokens). Standard evaluation setting used in most experiments.  
-* `latent_bench_full_500.json`: Large-scale benchmark (~500 sessions, ~620K tokens). Stress test for long-context and retrieval systems.  
-* `latent_bench_full_oracle.json`: Oracle/reference split used for oracle-style evaluation and analysis.  
+* `lucid_c.json`: Controlled setting (~30 sessions, ~47K tokens). Designed for reranking analysis where the relevant session is included in a small candidate set.  
+* `lucid_s.json`: Small-scale benchmark (~50 sessions, ~64K tokens). Suitable for fast experimentation and long-context evaluation.  
+* `lucid_b.json`: Base benchmark (~200 sessions, ~270K tokens). Standard evaluation setting used in most experiments.  
+* `lucid_l.json`: Large-scale benchmark (~500 sessions, ~620K tokens). Stress test for long-context and retrieval systems.  
+* `lucid_oracle.json`: Oracle/reference split used for oracle-style evaluation and analysis.  
 
 Each file contains evaluation instances with the following structure:
 
@@ -179,7 +192,7 @@ To test retrieval-augmented generation, first create retrieval logs:
 
 ```bash
 python -m src.retrieval.run_retrieval \
-  --in_file data/latent_bench_full_50.json \
+  --in_file data/lucid_s.json \
   --out_dir src/retrieval/retrieval_logs/flat-contriever/turn \
   --retriever flat-contriever \
   --granularity turn \

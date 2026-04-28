@@ -16,10 +16,15 @@ ENDS_WITH = "1953"
 
 def extract_haystack_size(filename: str):
     """
-    Example:
-      latent_bench_full_200.json_retrievallog_session_flat-contriever_1953
-    -> 200
+    Examples:
+      lucid_b.json_retrievallog_session_flat-contriever_1953 -> 200
+      older full-size retrieval log names are also supported.
     """
+    lucid_sizes = {"c": 30, "s": 50, "b": 200, "l": 500}
+    m = re.search(r"lucid_([csbl])\.json", filename)
+    if m:
+        return lucid_sizes[m.group(1)]
+
     m = re.search(r"full_(\d+)", filename)
     return int(m.group(1)) if m else None
 
