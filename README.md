@@ -121,6 +121,7 @@ wget https://huggingface.co/datasets/MichiganNLP/LUCid/resolve/main/lucid_5.json
 wget https://huggingface.co/datasets/MichiganNLP/LUCid/resolve/main/lucid_10.json
 
 cd ..
+```
 
 ## 📜 Dataset Format
 
