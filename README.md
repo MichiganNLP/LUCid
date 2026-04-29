@@ -13,32 +13,6 @@ LUCid challenges this assumption by introducing **latent user context**—inform
 
 - ❌ Semantically distant from the query  
 - ✅ Crucial for generating the correct personalized response  
-
-Our experiments show that **state-of-the-art systems fail** under this setting.
-
----
-
-## 🚨 Motivation
-
-<div style="text-align: center;">
-  <img src="images/rag_limitation_final.svg"
-       alt="Limitations of current RAG systems include their assumption of semantic similarity between user query and relevant session."
-       style="max-width: 700px; width: 80%;">
-</div>
-<br>
-
-Most personalization pipelines rely on:
-
-- Retrieval via semantic similarity (RAG)
-- Reranking via relevance scoring
-- Generation conditioned on retrieved context
-
-This leads to a **fundamental mismatch**:
-
-> Systems retrieve *topically similar* context,  
-> but users need *situationally relevant* context.
-
-LUCid is designed to expose this gap.
 ---
 
 ## 📦 What is LUCid?
@@ -52,7 +26,7 @@ LUCid is a benchmark of:
 Each task requires the model to:
 
 1. Identify latent user context hidden in history  
-2. Infer user attributes (e.g., age, location, preferences)  
+2. Infer user user attributes (e.g., age, location, preferences)   from contexts 
 3. Generate a personalized response  
 
 ---
@@ -71,26 +45,6 @@ Additionally:
 - **LUCid-HARD**: hard subset used for analysis on dimensions where semantic overlap is especially weak (`age_group`, `location/country`, and `religion` in the aggregation script).
 
 ---
-
-## 📊 Key Findings
-
-### ❌ Retrieval Failure
-- Recall drops to near zero on hard instances
-- Latent context is rarely retrieved
-
-### ❌ Reranking Failure
-- Rerankers prioritize semantic similarity over true relevance
-
-### ❌ Long-context Failure
-- Even with full history, models fail to infer user attributes
-
-### ⚠️ Safety Implications
-- Missing user context → unsafe or inappropriate responses  
-- Models default to WEIRD priors under ambiguity
-
-See paper for more details
----
-
 ## ⚙️ Usage
 
 ### Setup
