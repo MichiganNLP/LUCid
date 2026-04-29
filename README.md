@@ -1,8 +1,6 @@
 # LUCid: Redefining Relevance for Lifelong Personalization
 
 <p align="center">
-  <!-- <a href="https://xiaowu0162.github.io/long-mem-eval/"><img src="https://img.shields.io/badge/🌐-Website-red" height="23"></a>
-  <!-- <a href="https://arxiv.org/pdf/2410.10813.pdf"><img src="https://img.shields.io/badge/📝-Paper (ICLR 2025)-blue" height="23"></a> --> -->
   <a href="[https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned](https://huggingface.co/datasets/MichiganNLP/LUCid)" ><img src="https://img.shields.io/badge/🤗-Data-green" height="23"></a>
 </p>
 
@@ -60,9 +58,8 @@ Additionally:
 
 ```bash
 git clone https://github.com/MichiganNLP/LUCid.git
-cd lucid
-module load python/3.11.5
-python -m venv .venv
+cd LUCid
+python -m venv .venv # python/3.11.5
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
