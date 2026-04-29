@@ -20,6 +20,13 @@ Our experiments show that **state-of-the-art systems fail** under this setting.
 
 ## 🚨 Motivation
 
+<div style="text-align: center;">
+  <img src="images/rag_limitation_final.svg"
+       alt="Limitations of current RAG systems include their assumption of semantic similarity between user query and relevant session."
+       style="max-width: 700px; width: 80%;">
+</div>
+<br>
+
 Most personalization pipelines rely on:
 
 - Retrieval via semantic similarity (RAG)
@@ -122,6 +129,13 @@ wget https://huggingface.co/datasets/MichiganNLP/LUCid/resolve/main/lucid_10.jso
 
 cd ..
 ```
+
+<div style="text-align: center;">
+  <img src="images/dataset_examples_final.svg"
+       alt="Examples of some of our data."
+       style="max-width: 700px; width: 80%;">
+</div>
+<br>
 
 ## 📜 Dataset Format
 
