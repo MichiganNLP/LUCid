@@ -50,7 +50,7 @@ Additionally:
 ### Setup
 
 ```bash
-git clone https://github.com/your-repo/lucid
+git clone https://github.com/MichiganNLP/LUCid.git
 cd lucid
 module load python/3.11.5
 python -m venv .venv
@@ -84,13 +84,6 @@ wget https://huggingface.co/datasets/MichiganNLP/LUCid/resolve/main/lucid_10.jso
 cd ..
 ```
 
-<div style="text-align: center;">
-  <img src="images/dataset_examples_final.svg"
-       alt="Examples of some of our data."
-       style="max-width: 700px; width: 80%;">
-</div>
-<br>
-
 ## 📜 Dataset Format
 
 LUCid includes multiple benchmark variants corresponding to different history sizes and evaluation settings:
@@ -114,6 +107,15 @@ Each file contains evaluation instances with the following structure:
 * `answer_session_ids`: List of session IDs that contain the **latent user context** (ground-truth evidence). Used for retrieval evaluation.  
 * `haystack_session_ids`: List of all session IDs included in the interaction history.  
 * `haystack_sessions`: a list of the actual contents of the user-assistant chat history sessions. Each session is a list of turns. Each turn is a dict with the format `{"role": user/assistant, "content": message content}`. For the turns that contain the required evidence, an additional field `has_answer: true` is provided. This label is used for turn-level memory recall accuracy evaluation.
+
+### LUCid Sample Instances
+
+<div style="text-align: center;">
+  <img src="images/dataset_examples_final.svg"
+       alt="Examples of some of our data."
+       style="max-width: 700px; width: 80%;">
+</div>
+<br>
 
 ## 📊 Testing Your System
 
