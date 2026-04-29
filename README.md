@@ -1,5 +1,14 @@
 # LUCid: Redefining Relevance for Lifelong Personalization
 
+<p align="center">
+  <!-- <a href="https://xiaowu0162.github.io/long-mem-eval/"><img src="https://img.shields.io/badge/🌐-Website-red" height="23"></a>
+  <!-- <a href="https://arxiv.org/pdf/2410.10813.pdf"><img src="https://img.shields.io/badge/📝-Paper (ICLR 2025)-blue" height="23"></a> --> -->
+  <a href="[https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned](https://huggingface.co/datasets/MichiganNLP/LUCid)" ><img src="https://img.shields.io/badge/🤗-Data-green" height="23"></a>
+</p>
+
+🖋 [Chimaobi Okite](https://chimaobi-okite.github.io/), [Anika Misra](https://www.linkedin.com/in/anika-misra/), [Joyce Chai](https://web.eecs.umich.edu/~chaijy/), [Rada Mihalcea](https://web.eecs.umich.edu/~mihalcea/)
+
+
 > Benchmarking *situational relevance* in lifelong personalization.
 
 ---
