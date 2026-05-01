@@ -223,8 +223,13 @@ The aggregate reports overall response accuracy, hard-subset response accuracy, 
 If you find the work useful, please cite:
 
 ```
-@misc{lucid2026,
-  title = {LUCid: Redefining Relevance for Lifelong Personalization},
-  note = {See: LUCid Redefining Relevance For Lifelong Personalization.pdf}
+@misc{okite2026lucidredefiningrelevancelifelong,
+      title={LUCid: Redefining Relevance For Lifelong Personalization}, 
+      author={Chimaobi Okite and Anika Misra and Joyce Chai and Rada Mihalcea},
+      year={2026},
+      eprint={2604.26996},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2604.26996}, 
 }
 ```
