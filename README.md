@@ -1,7 +1,8 @@
 # LUCid: Redefining Relevance for Lifelong Personalization
 
 <p align="center">
-  <a href="[https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned](https://huggingface.co/datasets/MichiganNLP/LUCid)" ><img src="https://img.shields.io/badge/🤗-Data-green" height="23"></a>
+  <a href="https://arxiv.org/abs/2604.26996"><img src="https://img.shields.io/badge/📝-Paper-blue" height="23"></a>
+  <a href="https://huggingface.co/datasets/MichiganNLP/LUCid" ><img src="https://img.shields.io/badge/🤗-Data-green" height="23"></a>
 </p>
 
 🖋 [Chimaobi Okite](https://chimaobi-okite.github.io/), [Anika Misra](https://anikamisra.github.io), [Joyce Chai](https://web.eecs.umich.edu/~chaijy/), [Rada Mihalcea](https://web.eecs.umich.edu/~mihalcea/)
