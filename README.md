@@ -233,3 +233,5 @@ If you find the work useful, please cite:
       url={https://arxiv.org/abs/2604.26996}, 
 }
 ```
+
+Also, we thank the authors of [LongMemEval](https://arxiv.org/pdf/2410.10813) for open-sourcing their codebase; some of our scripts were adapted from their implementation.
